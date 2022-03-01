@@ -1,3 +1,4 @@
+import { Todo } from ".";
 
 export class TodoList{
     constructor() {
@@ -56,8 +57,10 @@ export class TodoList{
             ? 
             JSON.parse(localStorage.getItem('todo')) 
             :
-             []
-
+             [];
+             
+        this.todos = this.todos.map(Todo.fromJSON);
+        
     }
 
 }

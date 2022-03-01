@@ -7,6 +7,10 @@ export const todoList = new TodoList();
 
 todoList.todos.forEach(todo => crearTodoHTML(todo));
 
+// const newTodo = new Todo('Aprender JS')
+// todoList.nuevoTodo(newTodo);
+console.log(todoList);
+
 // crearTodoHTML(tarea)
 
 // localStorage.setItem('mi-key','ABC1234');
